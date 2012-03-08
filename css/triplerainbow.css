@@ -1,0 +1,2 @@
+.tr-hidden {display: none;}
+#submitform {position: absolute; top: 500px; left: 100px; width: 500px; height: 100px; background: #333; z-index: 10000;}
