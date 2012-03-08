@@ -1,3 +1,15 @@
+hardcodeView = {
+	name: "LED 6000 Series TV"
+}
+
+function renderForm(template) {
+	console.log(Mustache.render(template, hardcodeView))
+}
+
 function tripleRainbowSubmit() {
-	alert("You've submitted content! Yay!");
+	$.get('tmpl/form.html', renderForm)
+}
+
+function onLoad() {
+	$('.submit-btn').click(tripleRainbowSubmit)	
 }
